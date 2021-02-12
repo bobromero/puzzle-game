@@ -29,21 +29,20 @@
   
 }
 .start-button button{
-  background-color: #0070d9;;
+  background-color: #0070d91e;;
   color: white;
   font-size:medium;
   width:15vw;
   -webkit-text-stroke: .5px black;
-  border:groove 1px rgb(22, 0, 37);
+  border:solid .5px rgb(22, 0, 37);
   border-radius: 5px;
 }
 .start-button button:hover{
-  background-color: rgb(40, 44, 252);
+  background-color: rgba(40, 44, 252, 0.109);
 }
 .start-button button:focus{
   outline: none;
   box-shadow: none;
-  border: none;
 }
 
 
