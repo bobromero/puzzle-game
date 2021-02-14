@@ -22,7 +22,7 @@ const MainPage = () =>{
                 <h1 className="main">bmo reacts</h1>
             </div>
             <Link className="start-button" to="./chapter1Intro"><button onClick={()=>{setBegin(!begin)}}>Start</button></Link>
-            {/* <button onClick={()=>{setBegin(!begin)}}>help</button> */}
+            
         </div>
     );
 }

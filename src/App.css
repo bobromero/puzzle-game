@@ -3,6 +3,17 @@
   font-family: 'Adventure-Time';
   src: url('./data/Fonts/Adventure\ Time\ Logo.ttf');
 }
+h1{
+  margin:0;
+}
+.continue{
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(255, 255, 255, 0);
+  outline: none;
+  border:none;
+}
 /**index page*/
 .title-image{
   height:100px;
@@ -35,7 +46,9 @@
   background-size: cover;  
 }
 .start-button{
-  justify-content: center;
+  height:min-content;
+  width:min-content;
+  margin:auto;
   text-decoration: none;
 }
 .start-button button{
@@ -50,12 +63,19 @@
 }
 .start-button button:hover{
   background-color: #330000;
+  cursor: pointer;
 }
 .start-button button:focus{
   outline: none;
   box-shadow: none;
 }
 
-
+/**chapter1*/
+.chapter1{
+  background: url(./data/photos/1stpuzzlebackground.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;  
+}
 
 /**error page*/
