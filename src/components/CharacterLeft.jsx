@@ -2,7 +2,7 @@ import React, {useEffect, useState} from 'react';
 import finnTalk from '../data/characters/finnTalk.png';
 import jakeTalk from '../data/characters/JakeTalk.png';
 import gumTalk from '../data/characters/gumTalk.png';
-import bmoTalk from '../data/characters/bmoTalk.webp';
+import bmoTalk from '../data/characters/bmoTalk.png';
 
 let currentChar = '';
 const CharacterLeft = ({characterI, lineCount, Text}) =>{
@@ -38,7 +38,7 @@ const CharacterLeft = ({characterI, lineCount, Text}) =>{
                     
 
             </div>
-            <img className="characterLeftImg" height="200px" src={character}></img>
+            <img className="characterLeftImg" src={character}></img>
         </div>
     )
 }

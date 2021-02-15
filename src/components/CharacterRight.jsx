@@ -2,10 +2,10 @@ import React, {useEffect, useState} from 'react';
 import finnTalk from '../data/characters/finnTalk.png';
 import jakeTalk from '../data/characters/JakeTalk.png';
 import gumTalk from '../data/characters/gumTalk.png';
-import bmoTalk from '../data/characters/bmoTalk.webp';
+import bmoTalk from '../data/characters/bmoTalk.png';
 
 let currentChar = '';
-const CharacterRight = ({characterI, lineCount}) =>{
+const CharacterRight = ({characterI, lineCount, Text}) =>{
     const [character, setCharacter] = useState('');
 
     useEffect(()=>{
@@ -31,6 +31,14 @@ const CharacterRight = ({characterI, lineCount}) =>{
 
     return(
         <div className='characterRight'>
+            <div className="textBubbleright" src={character}>
+                <div>
+                    <h1>{Text || 'CLICK ANYWHERE TO BEGIN'}</h1>
+                </div>
+                    
+
+            </div>
+
             <img src={character}></img>
         </div>
     )

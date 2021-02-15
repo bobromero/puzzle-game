@@ -27,20 +27,21 @@ h1{
 }
 .characterLeftImg{
   position: absolute;
-  top:35vh;
+  height: 80vh;
+  top:20vh;
   left:2vw;
 }
 .characterRight img{
   position: absolute;
   height: 80vh;
   top:20vh;
-  left:60vw;
+  right:10vw;
 }
 .textBubble{
   background-color: #ffffff;
   position: absolute;
-  height: 50px;
-  width: 200px;
+  height: 15vh;
+  width: 25vw;
   border-radius: 25px;
   top: 30vh;
   left:50vh;
@@ -49,21 +50,44 @@ h1{
 .textBubble div{
   position: relative;
   left: 0px;
-  width:85%;
+  width:95%;
   
 }
 .textBubble div h1{
   position: relative;
   left: 20px;
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 12px;
+  font-size: xx-large;
+  
+}
+.textBubbleright{
+  background-color: #ffffff;
+  position: absolute;
+  height: 15vh;
+  width: 25vw;
+  border-radius: 25px;
+  top: 30vh;
+  right:70vh;
+  border: 2px solid black;
+}
+.textBubbleright div{
+  position: relative;
+  left: 0px;
+  width:85%;
+  
+}
+.textBubbleright div h1{
+  position: relative;
+  left: 20px;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: xx-large;
   
 }
 
 /**index page*/
 .title-image{
-  height:100px;
-  width: 180px;
+  height:27rem !important;
+  width: 53rem !important;
 }
 .main{
   padding: 0;
@@ -76,7 +100,7 @@ h1{
   text-align: center;
 }
 .main{
-  font-size: 40px;
+  font-size: 6rem;
   line-height: .5;
   -webkit-text-stroke: .5px black;
 }
@@ -100,12 +124,14 @@ h1{
 .start-button button{
   background-color: #ff0000;
   color: rgb(255, 255, 255);
-  font-size:medium;
+  font-size: 5rem;
   font-family: 'Adventure-Time';
-  -webkit-text-stroke: .5px black;
-  border:solid 2px rgb(22, 0, 37);
-  border-radius: 5px;
+  -webkit-text-stroke: 5px black;
+  border:solid 4px rgb(22, 0, 37);
+  border-radius: 50px;
   transition: .5s;
+  padding-left:30px;
+  padding-right:30px;
 }
 .start-button button:hover{
   background-color: #330000;
