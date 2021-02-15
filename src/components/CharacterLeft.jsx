@@ -5,7 +5,7 @@ import gumTalk from '../data/characters/gumTalk.png';
 import bmoTalk from '../data/characters/bmoTalk.webp';
 
 let currentChar = '';
-const CharacterLeft = ({characterI, lineCount}) =>{
+const CharacterLeft = ({characterI, lineCount, Text}) =>{
     const [character, setCharacter] = useState('');
 
     useEffect(()=>{
@@ -31,8 +31,14 @@ const CharacterLeft = ({characterI, lineCount}) =>{
 
     return(
         <div className='characterLeft'>
-            <h1>{characterI}</h1>
-            <img src={character}></img>
+            <div className="textBubble" src={character}>
+                <div>
+                    <h1>{Text || 'CLICK ANYWHERE TO BEGIN'}</h1>
+                </div>
+                    
+
+            </div>
+            <img className="characterLeftImg" src={character}></img>
         </div>
     )
 }

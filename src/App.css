@@ -14,10 +14,18 @@ h1{
   outline: none;
   border:none;
 }
+.continue1{
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(255, 255, 255, 0);
+  outline: none;
+  border:none;
+}
 .characterLeft, .characterRight{
   position: absolute;
 }
-.characterLeft img{
+.characterLeftImg{
   position: absolute;
   height: 80vh;
   top:20vh;
@@ -27,8 +35,32 @@ h1{
   position: absolute;
   height: 80vh;
   top:20vh;
-  left:70vw;
+  left:60vw;
 }
+.textBubble{
+  background-color: #ffffff;
+  position: absolute;
+  height: 50px;
+  width: 200px;
+  border-radius: 25px;
+  top: 30vh;
+  left:50vh;
+  border: 2px solid black;
+}
+.textBubble div{
+  position: relative;
+  left: 0px;
+  width:90%;
+  
+}
+.textBubble div h1{
+  position: relative;
+  left: 20px;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 12px;
+  
+}
+
 /**index page*/
 .title-image{
   height:100px;
@@ -92,5 +124,6 @@ h1{
   background-repeat: no-repeat;
   background-size: cover;  
 }
+
 
 /**error page*/

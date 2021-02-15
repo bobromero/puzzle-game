@@ -31,7 +31,6 @@ const CharacterRight = ({characterI, lineCount}) =>{
 
     return(
         <div className='characterRight'>
-            <h1>{characterI}</h1>
             <img src={character}></img>
         </div>
     )
