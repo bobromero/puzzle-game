@@ -38,7 +38,7 @@ const CharacterLeft = ({characterI, lineCount, Text}) =>{
                     
 
             </div>
-            <img className="characterLeftImg" src={character}></img>
+            <img className="characterLeftImg" height="200px" src={character}></img>
         </div>
     )
 }

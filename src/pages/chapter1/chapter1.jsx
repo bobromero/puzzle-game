@@ -37,6 +37,7 @@ const Chapter1= () =>{
                 <CharacterLeft
                     characterI="finn"
                     Text={dialogue[lineCount]}
+                    height="20px"
                 />
             </div>
             

@@ -23,12 +23,11 @@ h1{
   border:none;
 }
 .characterLeft, .characterRight{
-  position: absolute;
+  position: relative;
 }
 .characterLeftImg{
   position: absolute;
-  height: 80vh;
-  top:20vh;
+  top:35vh;
   left:2vw;
 }
 .characterRight img{
@@ -50,7 +49,7 @@ h1{
 .textBubble div{
   position: relative;
   left: 0px;
-  width:90%;
+  width:85%;
   
 }
 .textBubble div h1{
@@ -123,6 +122,23 @@ h1{
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;  
+}
+.chapter1hallway{
+  height:100vh;
+  width: 100vw;
+  background: url(./data/chapter1backgrounds/hallway.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; 
+}
+.chapter1bedroom{
+  position: relative;
+  height:100vh;
+  width: 100vw;
+  background: url(./data/chapter1backgrounds/bedroom1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; 
 }
 
 
