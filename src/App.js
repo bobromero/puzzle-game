@@ -9,7 +9,12 @@ import{
 } from 'react-transition-group';
 //pages
 import MainPage from './pages/index';
+//chapter1
 import Chapter1 from './pages/chapter1/chapter1';
+import Hallway from './pages/chapter1/hallway'
+
+
+
 import errorPage from './pages/404';
 function App() {
   return (
@@ -17,6 +22,7 @@ function App() {
       <Switch>
         <Route exact path="/" component={MainPage}></Route>
         <Route exact path="/chapter1Intro" component={Chapter1}></Route>
+        <Route exact path="/chapter1part1Hallway" component={Hallway}></Route>
         {/* <Route exact path="/chapter2" component={Chapter1}></Route> */}
         <Route exact path="/404" component={errorPage}></Route>
         <Redirect to="/404"></Redirect>

@@ -32,7 +32,7 @@ const Chapter1= () =>{
     }, [lineCount])
     return(
         <div style={style} className="chapter1">
-            <Link to="./404"><button style={changeLevel} className="continue1"></button></Link>
+            <Link to="./chapter1part1Hallway"><button style={changeLevel} className="continue1"></button></Link>
             <div style={zindex} className="continue" onClick={nextLine}>
                 <CharacterLeft
                     characterI="finn"
