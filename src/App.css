@@ -14,6 +14,21 @@ h1{
   outline: none;
   border:none;
 }
+.characterLeft, .characterRight{
+  position: absolute;
+}
+.characterLeft img{
+  position: absolute;
+  height: 80vh;
+  top:20vh;
+  left:2vw;
+}
+.characterRight img{
+  position: absolute;
+  height: 80vh;
+  top:20vh;
+  left:70vw;
+}
 /**index page*/
 .title-image{
   height:100px;

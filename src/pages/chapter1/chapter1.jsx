@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from 'react'
+import CharacterLeft from '../../components/CharacterLeft'
+import CharacterRight from '../../components/CharacterRight'
 
 const Chapter1= () =>{
     const [lineCount, setLineCount] = useState(-1)
@@ -19,9 +21,12 @@ const Chapter1= () =>{
     return(
         <div style={style} className="chapter1">
             <div className="continue" onClick={nextLine}></div>
-            <h1>hello</h1>
-            
-            <button onClick={()=>setOpen(!open)}>h</button>
+            <CharacterLeft
+                characterI="jake"
+            />
+            <CharacterRight
+                characterI="finn"
+            />
         </div>
     );
 }
