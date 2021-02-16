@@ -62,7 +62,7 @@ const Bedroom=()=>{
     
     return(
         <div className="chapter1bedroom">
-            <Link to="./"><button style={changeLevel} className="continue1"></button></Link>
+            <Link to="./chapter1part3BMO1"><button style={changeLevel} className="continue1"></button></Link>
             <div style={zindex} className="continue" onClick={nextLine}>
                 <div style={style2}>
                     <CharacterLeft
