@@ -45,7 +45,7 @@ h1{
   border-radius: 25px;
   top: 30vh;
   left:50vh;
-  border: 2px solid black;
+  border: 10px solid black;
 }
 .textBubble div{
   position: relative;

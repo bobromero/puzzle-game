@@ -20,7 +20,7 @@ const Hallway=()=>{
     
     return(
         <div className="chapter1hallway">
-            <Link to="./chapter1part1bedroom"><button style={changeLevel} className="continue1"></button></Link>
+            <Link to="./chapter1part2bedroom"><button style={changeLevel} className="continue1"></button></Link>
             <div style={zindex} className="continue" onClick={nextLine}>
                 <CharacterLeft
                     characterI='finn'
