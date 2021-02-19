@@ -1,0 +1,50 @@
+[
+    {
+        "name": "Blastoise",
+        "img":"https://cdn.bulbagarden.net/upload/thumb/0/02/009Blastoise.png/1200px-009Blastoise.png",
+        "health": 50,
+        "healthItem":"potion",
+        "attack1": "pummel",
+        "evolve": "none"
+    },
+    {
+        "name": "Eevee",
+        "img":"http://static.pokemonpets.com/images/monsters-images-800-800/133-Eevee.png",
+        "health": 10,
+        "healthItem":"potion",
+        "attack1": "bash",
+        "evolve": "jolt"
+    },
+    {
+        "name": "Flareon",
+        "img":"./pokemon/flareon.webp",
+        "health": 25,
+        "healthItem":"potion",
+        "attack1": "burn",
+        "evolve": "none"
+    },
+    {
+        "name": "Jolteon",
+        "img":"./pokemon/jolt.png",
+        "health": 25,
+        "healthItem":"potion",
+        "attack1": "shock",
+        "evolve": "none"
+    },
+    {
+        "name": "Pikachu",
+        "img":"./pokemon/Pika.png",
+        "health": 20,
+        "healthItem":"potion",
+        "attack1": "zap",
+        "evolve": "Richu"
+    },
+    {
+        "name": "Vaporeon",
+        "img":"./pokemon/vap.png",
+        "health": 25,
+        "healthItem":"potion",
+        "attack1": "swirl",
+        "evolve": "none"
+    }
+]

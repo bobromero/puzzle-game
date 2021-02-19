@@ -1,10 +1,24 @@
-import React from 'react';
-
+import React, { useState, useEffect} from 'react';
+import { Link } from 'react-router-dom';
+import GameInput from '../../components/GameInput';
+import Pokemon from '../../data/pokemon.json';
 
 const BMOGame = () =>{
+    const [lost, setLost] = useState(false);
+    console.log(Pokemon[0])
+    function click(){
+        window.location.reload();
+    }
     return(
         <div className="BMO">
-            <div className="screen"></div>
+            <div className="screen">
+                <GameInput
+                    poke1={Pokemon[1]}
+                    poke2={Pokemon[0]}
+                    lost={lost}
+                    setLost={setLost}
+                />
+            </div>
             <div className="buttons">
                 <div className="dpad">
                     <div className="col up">
@@ -25,7 +39,8 @@ const BMOGame = () =>{
                 </div>
                 <div className="navigators">
                     <button className="b"><h1>B</h1></button>
-                    <button className="a"><h1>A</h1></button>
+                    <Link to="./chapter1part3BMO1"><button onClick={()=>{setLost(false)}, click} className="a"><h1>A</h1></button></Link>
+                    
                 </div>
             </div>
         </div>

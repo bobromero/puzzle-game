@@ -179,7 +179,8 @@ h1{
   height: 60vh;
   width: 80vw;
   margin:auto;
-  background-color: red;
+  background-color: rgba(70, 199, 53, 0.322);
+  border-radius: 25px;
 }
 .buttons{
   display: grid;
@@ -277,7 +278,7 @@ h1{
   outline:0;
 }
 .b{
-  background-color:red;
+  background-color:rgb(255, 0, 0);
 }
 .a{
   background-color:blue

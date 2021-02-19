@@ -5,9 +5,10 @@ import gumTalk from '../data/characters/gumTalk.png';
 import bmoTalk from '../data/characters/bmoTalk.png';
 
 let currentChar = '';
-const CharacterLeft = ({characterI, lineCount, Text}) =>{
+const CharacterLeft = ({characterI, lineCount, Text, style}) =>{
     const [character, setCharacter] = useState('');
 
+    
     useEffect(()=>{
         switch (characterI) {
             case 'finn':
@@ -30,7 +31,7 @@ const CharacterLeft = ({characterI, lineCount, Text}) =>{
 
 
     return(
-        <div className='characterLeft'>
+        <div style={style || null} className='characterLeft'>
             <div className="textBubble" src={character}>
                 <div>
                     <h1>{Text || 'CLICK ANYWHERE TO BEGIN'}</h1>
