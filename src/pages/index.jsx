@@ -9,9 +9,7 @@ const MainPage = () =>{
     const [begin, setBegin] = useState(false);
     const [x,setX]=useState(0)
     const [y,setY]=useState(0)
-    useEffect(()=>{
-        console.log(begin)
-    },[begin])
+
     useEffect(()=>{
         const timer = window.setInterval(() => {
             if(y==true){
@@ -29,7 +27,6 @@ const MainPage = () =>{
             }
 
         }, 1000);
-        console.log('kjl')
         return () => {
             window.clearInterval(timer);
         };

@@ -1,0 +1,10 @@
+[
+    {
+        "name": "Blastoise",
+        "img":"https://cdn.bulbagarden.net/upload/thumb/0/02/009Blastoise.png/1200px-009Blastoise.png",
+        "health": 50,
+        "healthItem":"potion",
+        "attack1": "pummel",
+        "evolve": "none"
+    }
+]

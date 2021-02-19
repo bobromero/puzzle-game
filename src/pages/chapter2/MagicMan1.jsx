@@ -3,9 +3,9 @@ import { Link } from 'react-router-dom';
 import CharacterLeft from '../../components/CharacterLeft';
 import CharacterRight from '../../components/CharacterRight';
 
-const dialogue = ["COME ON, COME ON", "Don't worry BMO I'm going to w---","HEYAAAAA!","WOAH WHAT THE HECK MAN!","If I wasn't strechy I would have totaly been killed!","And Who's this clown, Sup Buddy.", "This is a stranger who I asked for help in getting you off BMO.", "Dude, you shouldn't be letting random people in our hous-- OH MY GOD BMO!", "ARGGH I was about to win before you clowns ruined everything!", "Why are you still playing that game anyway its been like 3 weeks?", "BMO got corrupted and I have to win this game in order to get him back.", "Im starting to lose hope because I can't make any progress on this dumb game.", "Hey stranger, why don't you give it a try, maybe you will Be sorta useful."]
+const dialogue = ["MAAAAGIIC MAAAAN!", "GOD DAMN YOU MAGIC MAN!","HEYAAAAA!","WOAH WHAT THE HECK MAN!","If I wasn't MAGICAL I would have totaly been killed!","Which one of you disturbed my slumber?", "This guy, it was not us I swear.", "Well now Jake, I know who and why, but now prepare to die!", "Not So fast, QUICK PUNCH HIM"]
 
-const Bedroom=()=>{
+const MagicMan1 = () =>{
     const [visible, setVisible] = useState(false);
     const [lineCount, setLineCount] = useState(0)
     const zindex={
@@ -66,7 +66,7 @@ const Bedroom=()=>{
             <div style={zindex} className="continue" onClick={nextLine}>
                 <div style={style2}>
                     <CharacterLeft
-                        characterI='jake'
+                        characterI='magic'
                         Text={dialogue[lineCount]}
                     />
                 </div>
@@ -74,7 +74,7 @@ const Bedroom=()=>{
 
                 <div style={style1}>
                     <CharacterRight
-                        characterI='finn'
+                        characterI='jake'
                         Text={dialogue[lineCount]}
                     />
                 </div>
@@ -84,6 +84,7 @@ const Bedroom=()=>{
             
         </div>
     );
+
 }
 
-export default Bedroom;
+export default MagicMan1;

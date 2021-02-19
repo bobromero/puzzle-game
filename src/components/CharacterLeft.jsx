@@ -3,8 +3,8 @@ import finnTalk from '../data/characters/finnTalk.png';
 import jakeTalk from '../data/characters/JakeTalk.png';
 import gumTalk from '../data/characters/gumTalk.png';
 import bmoTalk from '../data/characters/bmoTalk.png';
+import magicMan from '../data/characters/magicMan.webp'
 
-let currentChar = '';
 const CharacterLeft = ({characterI, lineCount, Text, style}) =>{
     const [character, setCharacter] = useState('');
 
@@ -23,8 +23,13 @@ const CharacterLeft = ({characterI, lineCount, Text, style}) =>{
             case 'bmo':
                 setCharacter(bmoTalk);
                 break;
+
+            case 'magic':
+                setCharacter(magicMan);
+                break;
+            }   
                 
-                }
+            
     }, [lineCount])
         
 

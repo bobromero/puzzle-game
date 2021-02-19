@@ -5,6 +5,8 @@ import Pokemon from '../../data/pokemon.json';
 
 const BMOGame = () =>{
     const [lost, setLost] = useState(false);
+    const [mega, setMega] = useState(1);
+    
     console.log(Pokemon[0])
     function click(){
         window.location.reload();
@@ -17,6 +19,7 @@ const BMOGame = () =>{
                     poke2={Pokemon[0]}
                     lost={lost}
                     setLost={setLost}
+                    mega={mega}
                 />
             </div>
             <div className="buttons">
@@ -38,7 +41,7 @@ const BMOGame = () =>{
                     </div>
                 </div>
                 <div className="navigators">
-                    <button className="b"><h1>B</h1></button>
+                    <button onClick={()=>{setMega(100)}} className="b"><h1>B</h1></button>
                     <Link to="./chapter1part3BMO1"><button onClick={()=>{setLost(false)}, click} className="a"><h1>A</h1></button></Link>
                     
                 </div>

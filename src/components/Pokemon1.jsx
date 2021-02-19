@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
+import { Link } from 'react-router-dom';
 
-const Pokemon1 =({pokemon, health2, health1, setHealth2, setHealth1, turn, setTurn})=>{
+const Pokemon1 =({pokemon, health2, health1, setHealth2, setHealth1, turn, setTurn, mega})=>{
     
     const style={
         position: 'relative',
@@ -11,7 +12,7 @@ const Pokemon1 =({pokemon, health2, health1, setHealth2, setHealth1, turn, setTu
     }
     function attack(){
         if(turn){
-            setHealth2(health2 - 10)
+            setHealth2(health2 - 10 * mega)
             setTurn(false)
         }
     }
@@ -28,7 +29,7 @@ const Pokemon1 =({pokemon, health2, health1, setHealth2, setHealth1, turn, setTu
             <ul>
                 <li><button onClick={attack}>attack: {pokemon.attack1}</button></li>
                 <li><button onClick={heal}>heal: {pokemon.healthItem}</button></li>
-                <li><button>Run</button></li>
+                <li><Link to="./chapter1part3BMO1/loser"><button>Run</button></Link></li>
             </ul>
         </div>
     )

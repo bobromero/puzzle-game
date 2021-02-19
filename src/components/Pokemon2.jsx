@@ -15,7 +15,7 @@ const Pokemon2 =({pokemon, health2, health1, setHealth1, turn, setTurn})=>{
     useEffect(()=>{
         setTimeout(
             function() {
-                if (turn === false){
+                if (turn === false && health2 > 0){
                     setHealth1(health1 - 15)
                     setTurn(true)
                 }
