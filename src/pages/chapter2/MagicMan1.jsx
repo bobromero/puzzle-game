@@ -97,6 +97,90 @@ const script=[{
     text:"I'll turn the world back to normal, ah ah ah ah",
     side:true
 },
+{
+    character:'finn',
+    emotion:'mad',
+    text:"WHAT IN GLOBS NAME ARE YOU TALKING ABOUT?",
+    side:false
+},
+{
+    character:'magic',
+    emotion:'talk',
+    text:"you'll see, ah ah ah ah",
+    side:true
+},
+{
+    character:'jake',
+    emotion:'talk',
+    text:"OH man I don't feel so good.",
+    side:true
+},
+{
+    character:'jake',
+    emotion:'talk',
+    text:"OH WHAT, WHAT THE FUCK, I'M ONE OF THOSE GUYS IN THAT GAME!",
+    side:true
+},
+{
+    character:'finn',
+    emotion:'MAD',
+    text:"OH MY GLOB OMG MY GLOB OH MY GLOB",
+    side:false
+},
+{
+    character:'finn',
+    emotion:'MAD',
+    text:"I HATE MAGIC MAN",
+    side:false
+},
+{
+    character:'finn',
+    emotion:'MAD',
+    text:"do you remeber what that idiot said?",
+    side:false
+},
+{
+    character:'bmo',
+    emotion:'excited',
+    text:"BMO awake",
+    side:true
+},
+{
+    character:'bmo',
+    emotion:'excited',
+    text:"I woke up just in time to hear and memorize what he said what he said",
+    side:true
+},
+{
+    character:'bmo',
+    emotion:'excited',
+    text:"He turned the Ooo into a land fille with pokemon",
+    side:true
+},
+{
+    character:'bmo',
+    emotion:'talk',
+    text:"to turn it back, first we have to make it to the candy kingdom",
+    side:true
+},
+{
+    character:'jake',
+    emotion:'excited',
+    text:"We need to go right now, I want to strech again",
+    side:true
+},
+{
+    character:'jake',
+    emotion:'mad',
+    text:"As for you, you will need to come if we get into any trouble",
+    side:true
+},
+{
+    character:'jake',
+    emotion:'excited',
+    text:"As for you, you will need to come if we get into any trouble",
+    side:true
+}
 
 ]
 const MagicMan1 = () =>{

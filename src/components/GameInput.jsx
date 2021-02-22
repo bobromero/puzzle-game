@@ -3,7 +3,7 @@ import {Link} from 'react-router-dom';
 import Pokemon from '../data/pokemon.json'
 import Pokemon1 from './Pokemon1';
 import Pokemon2 from './Pokemon2';
-import CharacterLeft from './CharacterLeft'
+import Winner from '../../src/components/winner';
 
 let dialogue = ['Wow you Blow. Try Being Better. Press A to try again.', "WOW I didn't even think about trying that, Good Job!"]
 
@@ -48,13 +48,13 @@ const GameInput =({poke1, poke2, lost, setLost, mega})=>{
     }, [health1, health2, turn, lost])
     return(
         <div>
-            <CharacterLeft
+            <Winner
                 characterI='jake'
                 Text={dialogue[0]}
                 style={style}
             />
             <Link to="./chapter2MagicalMan">
-                <CharacterLeft
+                <Winner
                     characterI='jake'
                     Text={dialogue[lineCount]}
                     style={style1}
