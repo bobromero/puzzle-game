@@ -5,31 +5,96 @@ import gumTalk from '../data/characters/gumTalk.png';
 import bmoTalk from '../data/characters/bmoTalk.png';
 import magicMan from '../data/characters/magicMan.webp'
 
-const CharacterLeft = ({characterI, lineCount, Text, style}) =>{
+const CharacterLeft = ({lineCount,style, object}) =>{
     const [character, setCharacter] = useState('');
-
-    
-    useEffect(()=>{
-        switch (characterI) {
+    useEffect(()=>{       
+        switch (object.character) {
             case 'finn':
-                setCharacter(finnTalk);
+                switch(object.emotion){
+                    case 'talk':
+                        setCharacter(finnTalk);
+                    break;
+                    case 'mad':
+                        setCharacter(finnTalk);
+                    break;
+                    case 'laugh':
+                        setCharacter(finnTalk);
+                    break;
+                    case 'excited':
+                        setCharacter(finnTalk);
+                    break;
+                }
                 break;
             case 'jake':
-                setCharacter(jakeTalk);
+                switch(object.emotion){
+                    case 'talk':
+                        setCharacter(jakeTalk);
+                    break;
+                    case 'mad':
+                        setCharacter(jakeTalk);
+                    break;
+                    case 'laugh':
+                        setCharacter(jakeTalk);
+                    break;
+                    case 'excited':
+                        setCharacter(jakeTalk);
+                    break;
+                }
+                
                 break;
             case 'gum':
-                setCharacter(gumTalk);
+                switch(object.emotion){
+                    case 'talk':
+                        setCharacter(gumTalk);
+                    break;
+                    case 'mad':
+                        setCharacter(gumTalk);
+                    break;
+                    case 'laugh':
+                        setCharacter(gumTalk);
+                    break;
+                    case 'excited':
+                        setCharacter(gumTalk);
+                    break;
+                }
+                
                 break;
             case 'bmo':
-                setCharacter(bmoTalk);
+                switch(object.emotion){
+                    case 'talk':
+                        setCharacter(bmoTalk);
+                    break;
+                    case 'mad':
+                        setCharacter(bmoTalk);
+                    break;
+                    case 'laugh':
+                        setCharacter(bmoTalk);
+                    break;
+                    case 'excited':
+                        setCharacter(bmoTalk);
+                    break;
+                }
                 break;
 
             case 'magic':
-                setCharacter(magicMan);
-                break;
-            }   
+                switch(object.emotion){
+                    case 'talk':
+                        setCharacter(magicMan);
+                    break;
+                    case 'mad':
+                        setCharacter(magicMan);
+                    break;
+                    case 'laugh':
+                        setCharacter(magicMan);
+                    break;
+                    case 'excited':
+                        setCharacter(magicMan);
+                    break;
+                }
                 
-            
+                break;
+            }
+
     }, [lineCount])
         
 
@@ -39,7 +104,7 @@ const CharacterLeft = ({characterI, lineCount, Text, style}) =>{
         <div style={style || null} className='characterLeft'>
             <div className="textBubble" src={character}>
                 <div>
-                    <h1>{Text || 'CLICK ANYWHERE TO BEGIN'}</h1>
+                    <h1>{object.text}</h1>
                 </div>
                     
 

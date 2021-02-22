@@ -1,87 +1,115 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
-import CharacterLeft from '../../components/CharacterLeft';
-import CharacterRight from '../../components/CharacterRight';
+import DialogueHandler from '../../components/dialogue';
 
-const dialogue = ["MAAAAGIIC MAAAAN!", "GOD DAMN YOU MAGIC MAN!","HEYAAAAA!","WOAH WHAT THE HECK MAN!","If I wasn't MAGICAL I would have totaly been killed!","Which one of you disturbed my slumber?", "This guy, it was not us I swear.", "Well now Jake, I know who and why, but now prepare to die!", "Not So fast, QUICK PUNCH HIM"]
+const script=[{
+    character:'magic',
+    emotion:'talk',
+    text:"MAAAAGIIC MAAAAN!",
+    side:true
+},
+{
+    character:'jake',
+    emotion:'mad',
+    text:"GOD DAMN YOU MAGIC MAN!",
+    side:false
+},
+{
+    character:'finn',
+    emotion:'mad',
+    text:"HEYAAAAA!",
+    side:false
+},
+{
+    character:'magic',
+    emotion:'talk',
+    text:"WOAH WHAT THE HECK MAN!",
+    side:true
+},
+{
+    character:'magic',
+    emotion:'talk',
+    text:"If I wasn't MAGICAL I would have totaly been killed!",
+    side:true
+},
+{
+    character:'magic',
+    emotion:'talk',
+    text:"Now, Which one of you disturbed my slumber?",
+    side:true
+},
+{
+    character:'jake',
+    emotion:'talk',
+    text:"This guy, it was not us, I didn't even touch BMO I swear.",
+    side:false
+},
+{
+    character:'magic',
+    emotion:'talk',
+    text:"Well now Jake, I know who and why, but now prepare to die!",
+    side:true
+},
+{
+    character:'finn',
+    emotion:'mad',
+    text:"Not So fast, QUICK GET HIM",
+    side:false
+},
+{
+    character:'magic',
+    emotion:'talk',
+    text:"If you want to get me, you'll have to find me",
+    side:true
+},
+{
+    character:'magic',
+    emotion:'talk',
+    text:"At the top of the tree,",
+    side:true
+},
+{
+    character:'magic',
+    emotion:'talk',
+    text:"To the gum tree you'll see,",
+    side:true
+},
+{
+    character:'magic',
+    emotion:'talk',
+    text:"The evil man with his evil plan,",
+    side:true
+},
+{
+    character:'magic',
+    emotion:'talk',
+    text:"To take who he wants,",
+    side:true
+},
+{
+    character:'magic',
+    emotion:'talk',
+    text:"If you stop this man,",
+    side:true
+},
+{
+    character:'magic',
+    emotion:'talk',
+    text:"I'll turn the world back to normal, ah ah ah ah",
+    side:true
+},
 
+]
 const MagicMan1 = () =>{
-    const [visible, setVisible] = useState(false);
-    const [lineCount, setLineCount] = useState(0)
-    const zindex={
-        zIndex: 11
-    }
-    const changeLevel={
-        zIndex: lineCount
-    }
-    const style1={
-        display: visible ? "block":"none"
-    }
-    const style2={
-        display: visible ? "none":"block"
-    }
-    //!find a better way to do this\/\/\/\/
-    useEffect(()=>{
-        switch (lineCount) {
-            case 2:
-                setVisible(true)
-                break;
-            case 3:
-                setVisible(false)
-                break;
-            case 6:
-                setVisible(true)
-                break;
-            case 7:
-                setVisible(false)
-                break;
-            case 9:
-                setVisible(true)
-                break;
-            case 10:
-                setVisible(false)
-                break;
-            default:
-                break;
-        }
-        // if(lineCount == 2){
-        //     setVisible(true)
-        // }
-        // else if(lineCount == 3){
-        //     setVisible(false)
-        // }
-        // else if(lineCount == 6){
-        //     setVisible(true)
-        // }
-    }, [lineCount])
-    //!find a better way to do this^^^
-    function nextLine(){
-
-        setLineCount(lineCount+1)
-    }
-    
+    const [lineCount, setLineCount] = useState(0);
     return(
         <div className="chapter1bedroom">
-            <Link to="./chapter1part3BMO1"><button style={changeLevel} className="continue1"></button></Link>
-            <div style={zindex} className="continue" onClick={nextLine}>
-                <div style={style2}>
-                    <CharacterLeft
-                        characterI='magic'
-                        Text={dialogue[lineCount]}
-                    />
-                </div>
-                    
-
-                <div style={style1}>
-                    <CharacterRight
-                        characterI='jake'
-                        Text={dialogue[lineCount]}
-                    />
-                </div>
-                   
-
-            </div>
-            
+            <DialogueHandler
+                script={script}
+                object={script[lineCount]}
+                lineCount={lineCount}
+                setLineCount={setLineCount}
+                linkTo={"./chapter1part3BMO1"}
+            />            
         </div>
     );
 
