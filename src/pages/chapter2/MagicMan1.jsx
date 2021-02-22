@@ -192,7 +192,7 @@ const MagicMan1 = () =>{
                 object={script[lineCount]}
                 lineCount={lineCount}
                 setLineCount={setLineCount}
-                linkTo={"./chapter1part3BMO1"}
+                linkTo={"/chapter2part1Outside"}
             />            
         </div>
     );
