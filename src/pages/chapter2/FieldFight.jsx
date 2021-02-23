@@ -24,30 +24,18 @@ const script = [
         emotion:'talk',
         text:"He's right Jake, lets take a shortcut through these fields",
         side:true
-    },
-    {
-        character:'finn',
-        emotion:'talk',
-        text:"He's right Jake, lets take a shortcut through these fields",
-        side:true
-    },
-    {
-        character:'jake',
-        emotion:'talk',
-        text:"He's right Jake, lets take a shortcut through these fields",
-        side:true
-    },
+    }
 ]
 const FieldFightBefore = () =>{
     const [lineCount, setLineCount] = useState(0);
     return(
-        <div className="outside-house">
+        <div className="field">
             <DialogueHandler
                 script={script}
                 object={script[lineCount]}
                 lineCount={lineCount}
                 setLineCount={setLineCount}
-                linkTo={"/chapter2part2FieldFight"}
+                linkTo={"/chapter2part2TheField"}
             />
         </div>
     )

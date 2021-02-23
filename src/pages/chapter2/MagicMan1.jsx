@@ -154,7 +154,7 @@ const script=[{
 {
     character:'bmo',
     emotion:'excited',
-    text:"He turned the Ooo into a land fille with pokemon",
+    text:"He turned the Ooo into a land filled with pokemon",
     side:true
 },
 {
