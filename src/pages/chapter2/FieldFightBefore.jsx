@@ -4,50 +4,44 @@ const script = [
     {
         character:'finn',
         emotion:'talk',
-        text:"I can't beleive magic man turned you into a pokemon.",
+        text:"I Think we can make it through this tall grass.",
         side:true
     },
     {
         character:'jake',
         emotion:'talk',
-        text:"I can't beleive magic man didn't turn you into a pokemon.",
+        text:"I don't know bro what if there are those things in here",
         side:false
     },
     {
-        character:'bmo',
-        emotion:'talk',
-        text:"I know that you guys are mad and all but we have no time to waste",
-        side:true
-    },
-    {
         character:'finn',
         emotion:'talk',
-        text:"He's right Jake, lets take a shortcut through these fields",
-        side:true
-    },
-    {
-        character:'finn',
-        emotion:'talk',
-        text:"He's right Jake, lets take a shortcut through these fields",
+        text:"nonsense, I'll race you two to the candy kingdom.",
         side:true
     },
     {
         character:'jake',
-        emotion:'talk',
-        text:"He's right Jake, lets take a shortcut through these fields",
+        emotion:'excited',
+        text:"I'll get there first, hahaha",
         side:true
     },
+    {
+        character:'bmo',
+        emotion:'excited',
+        text:"No BMO will",
+        side:true
+    }
 ]
 const FieldFightBefore = () =>{
     const [lineCount, setLineCount] = useState(0);
     return(
-        <div className="outside-house">
+        <div className="field">
             <DialogueHandler
                 script={script}
                 object={script[lineCount]}
                 lineCount={lineCount}
                 setLineCount={setLineCount}
-                linkTo={"/chapter2part2FieldFight"}
+                linkTo={"/chapter2part3Fight1"}
             />
         </div>
     )

@@ -174,12 +174,6 @@ const script=[{
     emotion:'mad',
     text:"As for you, you will need to come if we get into any trouble",
     side:true
-},
-{
-    character:'jake',
-    emotion:'excited',
-    text:"As for you, you will need to come if we get into any trouble",
-    side:true
 }
 
 ]

@@ -14,7 +14,7 @@ import BMOGame from './pages/chapter1/bmoGame';
 import MagicMan1 from './pages/chapter2/MagicMan1';
 import outsideHouse from './pages/chapter2/OutsideHouse';
 import FieldFightBefore from './pages/chapter2/FieldFightBefore';
-
+import FieldFight from './pages/chapter2/FieldFight';
 
 import errorPage from './pages/404';
 function App() {
@@ -29,7 +29,8 @@ function App() {
         <Route exact path="/chapter1part3BMO1/loser" component={MagicMan1}></Route>
         <Route exact path="/chapter2MagicalMan" component={MagicMan1}></Route>
         <Route exact path="/chapter2part1Outside" component={outsideHouse}></Route>
-        <Route exact path="/chapter2part2FieldFight" component={FieldFightBefore}></Route>
+        <Route exact path="/chapter2part2FieldFightBefore" component={FieldFightBefore}></Route>
+        <Route exact path="/chapter2part2FieldFight" component={FieldFight}></Route>
         {/* <Route exact path="/chapter2" component={Chapter1}></Route> */}
         <Route exact path="/404" component={errorPage}></Route>
         <Redirect to="/404"></Redirect>

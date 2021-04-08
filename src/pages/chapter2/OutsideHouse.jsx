@@ -35,7 +35,7 @@ const OutsideHouse = () =>{
                 object={script[lineCount]}
                 lineCount={lineCount}
                 setLineCount={setLineCount}
-                linkTo={"/chapter2part1Outside"}
+                linkTo={"/chapter2part2FieldFightBefore"}
             />
         </div>
     )
